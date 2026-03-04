@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="BipanaCafe — A bold, futuristic urban cafe experience. Premium coffee, gourmet food, and an electrifying atmosphere." />
+  <title>BipanaCafe — Bold Urban Coffee Experience</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Lucide Icons (lightweight SVG icon set) -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ========== PRELOADER ========== -->
+  <div class="preloader" id="preloader">
+    <div class="preloader-spinner"></div>
+    <div class="preloader-text">BipanaCafe</div>
+  </div>
+
+  <!-- ========== NAVBAR ========== -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="#" class="logo">Bipana<span>Cafe</span></a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <!-- Hamburger Toggle -->
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ========== HERO SECTION ========== -->
+  <section class="hero" id="home">
+    <!-- Animated gradient background -->
+    <div class="hero-bg"></div>
+
+    <!-- Floating particles -->
+    <div class="hero-particles">
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+    </div>
+
+    <div class="hero-content">
+      <div class="hero-tag">✦ Premium Urban Cafe</div>
+      <h1 class="hero-title">
+        Fuel Your<br />
+        <span class="highlight">Bold Energy</span>
+      </h1>
+      <p class="hero-desc">
+        Experience coffee redefined. Bold flavors, futuristic vibes, and
+        relentless energy — crafted for those who never settle.
+      </p>
+      <div class="hero-buttons">
+        <a href="#menu" class="btn btn-primary">Explore Menu</a>
+        <a href="#about" class="btn btn-glow">Our Story</a>
+      </div>
+    </div>
+
+    <!-- Scroll Indicator -->
+    <div class="scroll-indicator">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ========== MENU SECTION ========== -->
+  <section class="section" id="menu">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-tag">Our Menu</div>
+        <h2 class="section-title">Taste the <span>Revolution</span></h2>
+        <p class="section-subtitle">
+          Handcrafted beverages and gourmet bites designed to fuel your hustle.
+        </p>
+      </div>
+
+      <!-- Category Filters -->
+      <div class="menu-categories reveal">
+        <button class="cat-btn active" data-category="all">All</button>
+        <button class="cat-btn" data-category="coffee">Coffee</button>
+        <button class="cat-btn" data-category="drinks">Drinks</button>
+        <button class="cat-btn" data-category="food">Food</button>
+      </div>
+
+      <!-- Menu Cards -->
+      <div class="menu-grid stagger-children">
+
+        <!-- Card 1 -->
+        <div class="menu-card reveal" data-category="coffee">
+          <div class="menu-card-img-wrapper">
+            <img src="images/espresso.png" alt="Signature Espresso" class="menu-card-img" />
+            <span class="menu-card-badge">Popular</span>
+          </div>
+          <div class="menu-card-body">
+            <h3 class="menu-card-title">Signature Espresso</h3>
+            <p class="menu-card-desc">Double-shot espresso with rich crema — bold, intense, unforgettable.</p>
+            <div class="menu-card-footer">
+              <span class="menu-card-price">$4.50</span>
+              <button class="menu-card-order">Order Now</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="menu-card reveal" data-category="drinks">
+          <div class="menu-card-img-wrapper">
+            <img src="images/matcha.png" alt="Iced Matcha Latte" class="menu-card-img" />
+            <span class="menu-card-badge">New</span>
+          </div>
+          <div class="menu-card-body">
+            <h3 class="menu-card-title">Iced Matcha Latte</h3>
+            <p class="menu-card-desc">Ceremonial-grade matcha layered over oat milk — smooth and energizing.</p>
+            <div class="menu-card-footer">
+              <span class="menu-card-price">$5.90</span>
+              <button class="menu-card-order">Order Now</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="menu-card reveal" data-category="food">
+          <div class="menu-card-img-wrapper">
+            <img src="images/croissant.png" alt="Butter Croissant" class="menu-card-img" />
+          </div>
+          <div class="menu-card-body">
+            <h3 class="menu-card-title">Butter Croissant</h3>
+            <p class="menu-card-desc">Flaky, golden, hand-laminated pastry baked fresh every morning.</p>
+            <div class="menu-card-footer">
+              <span class="menu-card-price">$3.80</span>
+              <button class="menu-card-order">Order Now</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="menu-card reveal" data-category="food">
+          <div class="menu-card-img-wrapper">
+            <img src="images/burger.png" alt="Smash Burger" class="menu-card-img" />
+            <span class="menu-card-badge">Chef's Pick</span>
+          </div>
+          <div class="menu-card-body">
+            <h3 class="menu-card-title">Urban Smash Burger</h3>
+            <p class="menu-card-desc">Double-smashed patty, melted cheddar, house sauce — pure indulgence.</p>
+            <div class="menu-card-footer">
+              <span class="menu-card-price">$12.50</span>
+              <button class="menu-card-order">Order Now</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="menu-card reveal" data-category="drinks">
+          <div class="menu-card-img-wrapper">
+            <img src="images/smoothie.png" alt="Berry Boost Bowl" class="menu-card-img" />
+          </div>
+          <div class="menu-card-body">
+            <h3 class="menu-card-title">Berry Boost Bowl</h3>
+            <p class="menu-card-desc">Açaí-blueberry smoothie bowl topped with granola, berries & coconut.</p>
+            <div class="menu-card-footer">
+              <span class="menu-card-price">$8.90</span>
+              <button class="menu-card-order">Order Now</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="menu-card reveal" data-category="coffee">
+          <div class="menu-card-img-wrapper">
+            <img src="images/espresso.png" alt="Cold Brew Nitro" class="menu-card-img" />
+            <span class="menu-card-badge">Bold</span>
+          </div>
+          <div class="menu-card-body">
+            <h3 class="menu-card-title">Cold Brew Nitro</h3>
+            <p class="menu-card-desc">24-hour cold-brewed, nitrogen-infused for a velvety, cascading finish.</p>
+            <div class="menu-card-footer">
+              <span class="menu-card-price">$6.50</span>
+              <button class="menu-card-order">Order Now</button>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- /menu-grid -->
+    </div>
+  </section>
+
+  <!-- ========== ABOUT SECTION ========== -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <!-- Image Side -->
+        <div class="about-image reveal-left">
+          <img src="images/hero.png" alt="Inside BipanaCafe" />
+        </div>
+
+        <!-- Content Side -->
+        <div class="about-content reveal-right">
+          <div class="section-tag">Our Story</div>
+          <h2 class="section-title">Where <span>Bold Ideas</span><br />Meet Great Coffee</h2>
+          <p class="about-text">
+            BipanaCafe was born from a single obsession — to create a cafe that
+            doesn't just serve coffee but ignites a feeling. Every cup is
+            precision-roasted, every dish crafted with intent, and every corner
+            designed to spark creative energy. We are not a cafe. We are a
+            movement.
+          </p>
+
+          <!-- Animated Counters -->
+          <div class="stats-row">
+            <div class="stat-item">
+              <div class="stat-number" data-target="12">0</div>
+              <div class="stat-label">Years Strong</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number" data-target="50">0</div>
+              <div class="stat-label">Menu Items</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number" data-target="30">0</div>
+              <div class="stat-label">K+ Customers</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number" data-target="5">0</div>
+              <div class="stat-label">Locations</div>
+            </div>
+          </div>
+
+          <a href="#contact" class="btn btn-primary">Get In Touch</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CONTACT SECTION ========== -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-tag">Contact Us</div>
+        <h2 class="section-title">Let's <span>Connect</span></h2>
+        <p class="section-subtitle">Have a question or want to book a table? Drop us a message.</p>
+      </div>
+
+      <div class="contact-grid">
+        <!-- Info -->
+        <div class="contact-info reveal-left">
+          <h3>Reach Out</h3>
+          <p>We'd love to hear from you. Visit us or send a message — our team is ready.</p>
+
+          <div class="contact-detail">
+            <div class="contact-detail-icon">
+              <i data-lucide="map-pin"></i>
+            </div>
+            <div class="contact-detail-text">
+              <h4>Address</h4>
+              <span>123 Urban Lane, Downtown Metro City</span>
+            </div>
+          </div>
+
+          <div class="contact-detail">
+            <div class="contact-detail-icon">
+              <i data-lucide="phone"></i>
+            </div>
+            <div class="contact-detail-text">
+              <h4>Phone</h4>
+              <span>+1 (555) 987-6543</span>
+            </div>
+          </div>
+
+          <div class="contact-detail">
+            <div class="contact-detail-icon">
+              <i data-lucide="mail"></i>
+            </div>
+            <div class="contact-detail-text">
+              <h4>Email</h4>
+              <span>hello@bipanacafe.com</span>
+            </div>
+          </div>
+
+          <div class="contact-detail">
+            <div class="contact-detail-icon">
+              <i data-lucide="clock"></i>
+            </div>
+            <div class="contact-detail-text">
+              <h4>Hours</h4>
+              <span>Mon – Sun: 7:00 AM – 11:00 PM</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Form -->
+        <form class="contact-form reveal-right" id="contactForm">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Full Name</label>
+              <input type="text" id="name" placeholder="John Doe" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" placeholder="john@example.com" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" placeholder="Table reservation..." />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" placeholder="Tell us what's on your mind..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+
+        <!-- About Column -->
+        <div class="footer-about">
+          <a href="#" class="logo">Bipana<span>Cafe</span></a>
+          <p>Bold coffee, bold people. Experience the next generation of urban cafe culture at BipanaCafe.</p>
+          <div class="social-links">
+            <a href="#" aria-label="Instagram"><i data-lucide="instagram"></i></a>
+            <a href="#" aria-label="Twitter / X"><i data-lucide="twitter"></i></a>
+            <a href="#" aria-label="Facebook"><i data-lucide="facebook"></i></a>
+            <a href="#" aria-label="YouTube"><i data-lucide="youtube"></i></a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Menu -->
+        <div class="footer-col">
+          <h4>Popular</h4>
+          <ul>
+            <li><a href="#">Signature Espresso</a></li>
+            <li><a href="#">Cold Brew Nitro</a></li>
+            <li><a href="#">Iced Matcha Latte</a></li>
+            <li><a href="#">Smash Burger</a></li>
+          </ul>
+        </div>
+
+        <!-- Support -->
+        <div class="footer-col">
+          <h4>Support</h4>
+          <ul>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Careers</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        &copy; 2026 <span>BipanaCafe</span>. All rights reserved. Crafted with ☕ &amp; code.
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========== BACK TO TOP ========== -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i data-lucide="arrow-up"></i>
+  </button>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
